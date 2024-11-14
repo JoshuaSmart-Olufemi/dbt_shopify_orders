@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+
+  - name: shopify # name of the source 
+    schema: public # this is the schema our raw data lives in
+    database: shopify_db # this is the name of our database
+
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+    tables:
+      - name: shopify_orders
+        description: >
+          Contains raw unclean data of shopify orders
